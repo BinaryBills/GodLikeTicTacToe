@@ -22,6 +22,7 @@ void pvp::playerTurn(char symbol, int userInput)
 	if (chartArray[row][col].isTaken == true)
 	{
 		cerr << "The position that you specified has already been filled" << endl;
+		cout << "Enter a valid number: ";
 		cin >> userInput;
 		playerTurn(symbol, userInput);
 	}
